@@ -1,0 +1,25 @@
+<div style="padding-left:130px;padding-right:200px;">
+<div align = "center">
+	<h2>Mono-Alphabetic Key Cipher</h2>
+	<form><!--Start of ciphertext -->
+			<font style="font-weight:bold;font-size:17pt">Input: Alphabets only</font>
+			<br>
+			</br>
+							<div>
+									<input type="text" name="keycipher" id="keycipherinput" cols="26" maxlength="26" placeholder="Enter ciphertext"  onkeydown = "if (event.keyCode == 13)
+											return false">
+									<button class="btnSubmit" type="button" onclick="KeyCipher()">Submit</button>
+									<button class="btnClear" type="reset">Clear</button>
+							</div>
+							</br>
+							Ciphertext = <label id="ciphertext"></label>
+							<div id="partcinput">
+									Select a text file: <input id="cipherinputfile" type="file"> <button class="btnEncrypt" type="button" onclick="KeyCipherEncryption()">Encrypt</button>  <button class="btnDecrypt" type="button" onclick="KeyCipherDecryption()">Decrypt</button>
+							</div>
+
+							<div>
+									<pre id="cipher_textfiledisplayed"></pre>
+							</div>
+	</form><!--End of ciphertext -->
+</div>
+</div>

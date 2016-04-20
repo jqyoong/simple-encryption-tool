@@ -1,0 +1,39 @@
+<!DOCTYPEs html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Encryption Tools</title>
+
+<!--Start js file for single page application!-->
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+<!--End js file for single page application!-->
+  <link rel="stylesheet" type="text/css" href="css/button.css">
+
+</head>
+<body ng-app="single-page-app">
+  <div ng-controller="cfgController">
+    <div>
+    <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+      <div class="container">
+          <ul class="nav navbar-nav navbar">
+          <li class="active"><a href="#/">Home<span class="sr-only">(current)</span></a></li>
+          <li><a href="#/CipherEncryption">Key Cipher</a></li>
+          <li><a href="#/RailFenceEncryption">RailFence Cipher</a></li>
+          <li><a href="#/About">About</a></li>
+        </ul>
+      </div>
+  </nav>
+  </div>
+    <br/>
+
+    <div ng-view class="jumbotron"></div>
+  </div>
+  <script src="js/algorithm.js"></script>
+</body>
+</html>
